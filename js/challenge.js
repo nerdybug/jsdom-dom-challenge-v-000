@@ -11,11 +11,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     var interval = setInterval(every1sec, 1000);
-    var i = 0 
+    var i = 0
     var heartCounter = 1
 
-    function every1sec() { 
-    secondsPassed.textContent = i++; 
+    function every1sec() {
+    secondsPassed.textContent = i++;
     }
 
     every1sec ();
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
     pause.addEventListener('click', function()  {
         if (pause.innerText == 'pause') {
             clearInterval(interval)
-            pause.innerText = 'resume' 
+            pause.innerText = 'resume'
             plus.disabled = true;
             minus.disabled = true;
             like.disabled = true;
